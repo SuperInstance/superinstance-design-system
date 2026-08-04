@@ -1,0 +1,59 @@
+/**
+ * SuperInstance Design System — Spacing (Web)
+ * Modular scale rooted in a 4px grid.
+ */
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Base unit
+   * --------------------------------------------------------------------------- */
+  --si-space-unit: 4px;
+
+  /* -----------------------------------------------------------------------------
+   * Scale
+   * --------------------------------------------------------------------------- */
+  --si-space-0: 0;
+  --si-space-1: calc(var(--si-space-unit) * 1);   /* 4px */
+  --si-space-2: calc(var(--si-space-unit) * 2);   /* 8px */
+  --si-space-3: calc(var(--si-space-unit) * 3);   /* 12px */
+  --si-space-4: calc(var(--si-space-unit) * 4);   /* 16px */
+  --si-space-5: calc(var(--si-space-unit) * 5);   /* 20px */
+  --si-space-6: calc(var(--si-space-unit) * 6);   /* 24px */
+  --si-space-8: calc(var(--si-space-unit) * 8);   /* 32px */
+  --si-space-10: calc(var(--si-space-unit) * 10); /* 40px */
+  --si-space-12: calc(var(--si-space-unit) * 12); /* 48px */
+  --si-space-16: calc(var(--si-space-unit) * 16); /* 64px */
+  --si-space-20: calc(var(--si-space-unit) * 20); /* 80px */
+  --si-space-24: calc(var(--si-space-unit) * 24); /* 96px */
+  --si-space-32: calc(var(--si-space-unit) * 32); /* 128px */
+
+  /* -----------------------------------------------------------------------------
+   * Semantic tokens
+   * --------------------------------------------------------------------------- */
+  --si-gap-xs: var(--si-space-1);
+  --si-gap-sm: var(--si-space-2);
+  --si-gap-md: var(--si-space-4);
+  --si-gap-lg: var(--si-space-6);
+  --si-gap-xl: var(--si-space-8);
+
+  --si-pad-xs: var(--si-space-1);
+  --si-pad-sm: var(--si-space-2);
+  --si-pad-md: var(--si-space-4);
+  --si-pad-lg: var(--si-space-6);
+  --si-pad-xl: var(--si-space-8);
+
+  --si-radius-sm: 4px;
+  --si-radius-md: 8px;
+  --si-radius-lg: 12px;
+  --si-radius-xl: 16px;
+  --si-radius-full: 9999px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Common layout helpers
+ * --------------------------------------------------------------------------- */
+.si-stack-xs > * + * { margin-block-start: var(--si-space-1); }
+.si-stack-sm > * + * { margin-block-start: var(--si-space-2); }
+.si-stack-md > * + * { margin-block-start: var(--si-space-4); }
+.si-stack-lg > * + * { margin-block-start: var(--si-space-6); }
+.si-stack-xl > * + * { margin-block-start: var(--si-space-8); }

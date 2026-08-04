@@ -1,0 +1,47 @@
+/**
+ * SuperInstance — Badge (Web)
+ */
+
+.si-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--si-space-1);
+  padding: var(--si-space-1) var(--si-space-2);
+  border-radius: var(--si-radius-full);
+  font-family: var(--si-font-label);
+  font-size: var(--si-text-xs);
+  font-weight: var(--si-font-semibold);
+  letter-spacing: var(--si-tracking-wider);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.si-badge-default {
+  background-color: var(--si-bg-tertiary);
+  color: var(--si-fg-secondary);
+}
+
+.si-badge-info {
+  background-color: var(--si-info-100);
+  color: var(--si-info-900);
+}
+
+.si-badge-success {
+  background-color: var(--si-success-100);
+  color: var(--si-success-900);
+}
+
+.si-badge-warning {
+  background-color: var(--si-warning-100);
+  color: var(--si-warning-900);
+}
+
+.si-badge-danger {
+  background-color: var(--si-danger-100);
+  color: var(--si-danger-900);
+}
+
+.si-badge-amber {
+  background-color: var(--si-amber-100);
+  color: var(--si-amber-900);
+}

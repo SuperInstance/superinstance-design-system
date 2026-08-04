@@ -1,0 +1,79 @@
+/**
+ * SuperInstance — Button (Web)
+ */
+
+.si-button {
+  --si-button-bg: var(--si-accent-primary);
+  --si-button-fg: var(--si-fg-inverted);
+  --si-button-border: transparent;
+  --si-button-hover-bg: var(--si-accent-primary-hover);
+  --si-button-active-bg: var(--si-water-800);
+  --si-button-shadow: var(--si-shadow-sm);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--si-space-2);
+  padding: var(--si-space-2) var(--si-space-4);
+  border: 1px solid var(--si-button-border);
+  border-radius: var(--si-radius-md);
+  background-color: var(--si-button-bg);
+  color: var(--si-button-fg);
+  font-family: var(--si-font-label);
+  font-size: var(--si-text-sm);
+  font-weight: var(--si-font-semibold);
+  letter-spacing: var(--si-tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--si-button-shadow);
+  transition:
+    background-color var(--si-duration-fast) var(--si-ease-out),
+    border-color var(--si-duration-fast) var(--si-ease-out),
+    box-shadow var(--si-duration-fast) var(--si-ease-out),
+    transform var(--si-duration-fast) var(--si-ease-out);
+}
+
+.si-button:hover {
+  background-color: var(--si-button-hover-bg);
+  box-shadow: var(--si-shadow-md);
+}
+
+.si-button:active {
+  background-color: var(--si-button-active-bg);
+  transform: translateY(1px);
+}
+
+.si-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.si-button-secondary {
+  --si-button-bg: transparent;
+  --si-button-fg: var(--si-fg-primary);
+  --si-button-border: var(--si-border-default);
+  --si-button-hover-bg: var(--si-bg-secondary);
+  --si-button-active-bg: var(--si-bg-tertiary);
+}
+
+.si-button-ghost {
+  --si-button-bg: transparent;
+  --si-button-fg: var(--si-fg-link);
+  --si-button-border: transparent;
+  --si-button-hover-bg: var(--si-bg-secondary);
+  --si-button-active-bg: var(--si-bg-tertiary);
+  --si-button-shadow: none;
+}
+
+.si-button-danger {
+  --si-button-bg: var(--si-danger-500);
+  --si-button-fg: #ffffff;
+  --si-button-hover-bg: var(--si-danger-700);
+  --si-button-active-bg: var(--si-danger-900);
+}
+
+/* Sizes */
+.si-button-sm { padding: var(--si-space-1) var(--si-space-3); font-size: var(--si-text-xs); }
+.si-button-lg { padding: var(--si-space-3) var(--si-space-6); font-size: var(--si-text-base); }

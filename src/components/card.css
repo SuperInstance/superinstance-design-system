@@ -1,0 +1,59 @@
+/**
+ * SuperInstance — Card (Web)
+ */
+
+.si-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--si-space-4);
+  padding: var(--si-space-6);
+  background-color: var(--si-bg-surface);
+  border: 1px solid var(--si-border-subtle);
+  border-radius: var(--si-radius-lg);
+  box-shadow: var(--si-shadow-md);
+  transition:
+    box-shadow var(--si-duration-base) var(--si-ease-out),
+    transform var(--si-duration-base) var(--si-ease-out);
+}
+
+.si-card-hoverable:hover {
+  box-shadow: var(--si-shadow-lg);
+  transform: translateY(-2px);
+}
+
+.si-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--si-space-4);
+}
+
+.si-card-title {
+  font-family: var(--si-font-heading);
+  font-size: var(--si-text-xl);
+  font-weight: var(--si-font-semibold);
+  color: var(--si-fg-primary);
+  line-height: var(--si-leading-snug);
+}
+
+.si-card-subtitle {
+  font-family: var(--si-font-body);
+  font-size: var(--si-text-sm);
+  color: var(--si-fg-secondary);
+}
+
+.si-card-body {
+  font-family: var(--si-font-body);
+  font-size: var(--si-text-base);
+  color: var(--si-fg-primary);
+  line-height: var(--si-leading-relaxed);
+}
+
+.si-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--si-space-3);
+  padding-top: var(--si-space-4);
+  border-top: 1px solid var(--si-border-subtle);
+}

@@ -1,0 +1,42 @@
+/**
+ * SuperInstance — HUD Element (Web reference / overlay)
+ */
+
+.si-hud {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--si-space-2);
+  padding: var(--si-space-2) var(--si-space-3);
+  background-color: var(--si-bg-overlay);
+  color: var(--si-fg-inverted);
+  border: 1px solid var(--si-border-strong);
+  border-radius: var(--si-radius-md);
+  font-family: var(--si-font-data);
+  font-size: var(--si-text-sm);
+  font-weight: var(--si-font-medium);
+  letter-spacing: var(--si-tracking-wide);
+  font-variant-numeric: tabular-nums;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.si-hud-critical {
+  border-color: var(--si-danger-500);
+  color: var(--si-danger-300);
+  animation: si-hud-pulse var(--si-duration-slow) var(--si-ease-in-out) infinite;
+}
+
+.si-hud-value {
+  color: var(--si-accent-foam);
+}
+
+.si-hud-label {
+  color: var(--si-fg-tertiary);
+  font-size: var(--si-text-xs);
+  text-transform: uppercase;
+}
+
+@keyframes si-hud-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+  50% { box-shadow: 0 0 12px 0 rgba(249, 115, 22, 0.15); }
+}

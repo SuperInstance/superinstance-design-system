@@ -1,0 +1,75 @@
+/**
+ * SuperInstance Design System — Motion (Web)
+ */
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Easing curves
+   * --------------------------------------------------------------------------- */
+  --si-ease-linear: linear;
+  --si-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --si-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --si-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --si-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --si-ease-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --si-ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+
+  /* -----------------------------------------------------------------------------
+   * Duration scale
+   * --------------------------------------------------------------------------- */
+  --si-duration-instant: 0ms;
+  --si-duration-fast: 100ms;
+  --si-duration-base: 200ms;
+  --si-duration-normal: 300ms;
+  --si-duration-slow: 500ms;
+  --si-duration-slower: 700ms;
+
+  /* -----------------------------------------------------------------------------
+   * Stagger
+   * --------------------------------------------------------------------------- */
+  --si-stagger-tight: 30ms;
+  --si-stagger-base: 50ms;
+  --si-stagger-loose: 100ms;
+}
+
+/* -----------------------------------------------------------------------------
+ * Animation utilities
+ * --------------------------------------------------------------------------- */
+.si-fade-in {
+  animation: si-fade-in var(--si-duration-base) var(--si-ease-out) forwards;
+}
+
+.si-fade-in-up {
+  animation: si-fade-in-up var(--si-duration-base) var(--si-ease-out) forwards;
+}
+
+.si-scale-in {
+  animation: si-scale-in var(--si-duration-base) var(--si-ease-spring) forwards;
+}
+
+@keyframes si-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes si-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes si-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

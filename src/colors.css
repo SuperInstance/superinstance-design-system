@@ -1,0 +1,218 @@
+/**
+ * SuperInstance Design System — Colors (Web)
+ * Maritime palette: deep water blues, harbor greys, dock wood browns,
+ * lantern amber, sea foam, rust.
+ */
+
+:root {
+  color-scheme: light dark;
+
+  /* -----------------------------------------------------------------------------
+   * Harbor neutrals
+   * --------------------------------------------------------------------------- */
+  --si-harbor-50: #f8f9fa;
+  --si-harbor-100: #f1f3f5;
+  --si-harbor-200: #e9ecef;
+  --si-harbor-300: #dee2e6;
+  --si-harbor-400: #adb5bd;
+  --si-harbor-500: #868e96;
+  --si-harbor-600: #495057;
+  --si-harbor-700: #343a40;
+  --si-harbor-800: #212529;
+  --si-harbor-900: #0b0d0f;
+
+  /* -----------------------------------------------------------------------------
+   * Deep water blues
+   * --------------------------------------------------------------------------- */
+  --si-water-50: #f0f7ff;
+  --si-water-100: #d0e8ff;
+  --si-water-200: #9fd2ff;
+  --si-water-300: #5eb5f7;
+  --si-water-400: #2b94e1;
+  --si-water-500: #0f74c2;
+  --si-water-600: #0b5a9e;
+  --si-water-700: #0a406e;
+  --si-water-800: #072a48;
+  --si-water-900: #04162a;
+
+  /* -----------------------------------------------------------------------------
+   * Dock wood browns
+   * --------------------------------------------------------------------------- */
+  --si-wood-50: #f6f2ee;
+  --si-wood-100: #ebe2da;
+  --si-wood-200: #d6c4b4;
+  --si-wood-300: #bfa08a;
+  --si-wood-400: #a67d62;
+  --si-wood-500: #8d6e63;
+  --si-wood-600: #6d4c41;
+  --si-wood-700: #5d4037;
+  --si-wood-800: #3e2723;
+  --si-wood-900: #21120e;
+
+  /* -----------------------------------------------------------------------------
+   * Lantern amber
+   * --------------------------------------------------------------------------- */
+  --si-amber-50: #fffbeb;
+  --si-amber-100: #fef3c7;
+  --si-amber-200: #fde68a;
+  --si-amber-300: #fcd34d;
+  --si-amber-400: #fbbf24;
+  --si-amber-500: #f59e0b;
+  --si-amber-600: #d97706;
+  --si-amber-700: #b45309;
+  --si-amber-800: #92400e;
+  --si-amber-900: #78350f;
+
+  /* -----------------------------------------------------------------------------
+   * Sea foam
+   * --------------------------------------------------------------------------- */
+  --si-foam-50: #f0fdfa;
+  --si-foam-100: #ccfbf1;
+  --si-foam-200: #99f6e4;
+  --si-foam-300: #5eead4;
+  --si-foam-400: #2dd4bf;
+  --si-foam-500: #14b8a6;
+  --si-foam-600: #0d9488;
+  --si-foam-700: #0f766e;
+  --si-foam-800: #115e59;
+  --si-foam-900: #134e4a;
+
+  /* -----------------------------------------------------------------------------
+   * Rust
+   * --------------------------------------------------------------------------- */
+  --si-rust-50: #fff7ed;
+  --si-rust-100: #ffedd5;
+  --si-rust-200: #fed7aa;
+  --si-rust-300: #fdba74;
+  --si-rust-400: #fb923c;
+  --si-rust-500: #f97316;
+  --si-rust-600: #ea580c;
+  --si-rust-700: #c2410c;
+  --si-rust-800: #9a3412;
+  --si-rust-900: #7c2d12;
+
+  /* -----------------------------------------------------------------------------
+   * Semantic colors
+   * --------------------------------------------------------------------------- */
+  --si-success-50: var(--si-foam-50);
+  --si-success-100: var(--si-foam-100);
+  --si-success-500: var(--si-foam-500);
+  --si-success-700: var(--si-foam-700);
+  --si-success-900: var(--si-foam-900);
+
+  --si-warning-50: var(--si-amber-50);
+  --si-warning-100: var(--si-amber-100);
+  --si-warning-500: var(--si-amber-500);
+  --si-warning-700: var(--si-amber-700);
+  --si-warning-900: var(--si-amber-900);
+
+  --si-danger-50: var(--si-rust-50);
+  --si-danger-100: var(--si-rust-100);
+  --si-danger-500: var(--si-rust-500);
+  --si-danger-700: var(--si-rust-700);
+  --si-danger-900: var(--si-rust-900);
+
+  --si-info-50: var(--si-water-50);
+  --si-info-100: var(--si-water-100);
+  --si-info-500: var(--si-water-500);
+  --si-info-700: var(--si-water-700);
+  --si-info-900: var(--si-water-900);
+
+  /* -----------------------------------------------------------------------------
+   * Theme mapping — light mode
+   * --------------------------------------------------------------------------- */
+  --si-bg-primary: var(--si-harbor-50);
+  --si-bg-secondary: var(--si-harbor-100);
+  --si-bg-tertiary: var(--si-harbor-200);
+  --si-bg-inverted: var(--si-harbor-900);
+  --si-bg-surface: #ffffff;
+  --si-bg-overlay: rgba(11, 13, 15, 0.72);
+  --si-bg-water: var(--si-water-900);
+
+  --si-fg-primary: var(--si-harbor-900);
+  --si-fg-secondary: var(--si-harbor-600);
+  --si-fg-tertiary: var(--si-harbor-400);
+  --si-fg-inverted: var(--si-harbor-50);
+  --si-fg-link: var(--si-water-600);
+  --si-fg-link-hover: var(--si-water-700);
+
+  --si-border-subtle: var(--si-harbor-200);
+  --si-border-default: var(--si-harbor-300);
+  --si-border-strong: var(--si-harbor-400);
+
+  --si-accent-primary: var(--si-water-600);
+  --si-accent-primary-hover: var(--si-water-700);
+  --si-accent-secondary: var(--si-wood-600);
+  --si-accent-amber: var(--si-amber-500);
+  --si-accent-foam: var(--si-foam-500);
+
+  --si-shadow-color: 220 13% 46%;
+  --si-shadow-sm: 0 1px 2px 0 hsl(var(--si-shadow-color) / 0.05);
+  --si-shadow-md: 0 4px 6px -1px hsl(var(--si-shadow-color) / 0.1), 0 2px 4px -2px hsl(var(--si-shadow-color) / 0.1);
+  --si-shadow-lg: 0 10px 15px -3px hsl(var(--si-shadow-color) / 0.1), 0 4px 6px -4px hsl(var(--si-shadow-color) / 0.1);
+  --si-shadow-glow: 0 0 24px 0 hsl(var(--si-shadow-color) / 0.2);
+}
+
+/* -----------------------------------------------------------------------------
+ * Theme mapping — dark mode
+ * --------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --si-bg-primary: var(--si-harbor-900);
+    --si-bg-secondary: var(--si-harbor-800);
+    --si-bg-tertiary: var(--si-harbor-700);
+    --si-bg-inverted: var(--si-harbor-50);
+    --si-bg-surface: var(--si-harbor-800);
+    --si-bg-overlay: rgba(0, 0, 0, 0.72);
+    --si-bg-water: var(--si-water-950, #02080f);
+
+    --si-fg-primary: var(--si-harbor-50);
+    --si-fg-secondary: var(--si-harbor-300);
+    --si-fg-tertiary: var(--si-harbor-500);
+    --si-fg-inverted: var(--si-harbor-900);
+    --si-fg-link: var(--si-water-300);
+    --si-fg-link-hover: var(--si-water-200);
+
+    --si-border-subtle: var(--si-harbor-700);
+    --si-border-default: var(--si-harbor-600);
+    --si-border-strong: var(--si-harbor-500);
+
+    --si-accent-primary: var(--si-water-400);
+    --si-accent-primary-hover: var(--si-water-300);
+    --si-accent-secondary: var(--si-wood-400);
+    --si-accent-amber: var(--si-amber-400);
+    --si-accent-foam: var(--si-foam-400);
+
+    --si-shadow-color: 220 13% 5%;
+  }
+}
+
+/* Manual dark-mode class override */
+.si-theme-dark {
+  --si-bg-primary: var(--si-harbor-900);
+  --si-bg-secondary: var(--si-harbor-800);
+  --si-bg-tertiary: var(--si-harbor-700);
+  --si-bg-inverted: var(--si-harbor-50);
+  --si-bg-surface: var(--si-harbor-800);
+  --si-bg-overlay: rgba(0, 0, 0, 0.72);
+  --si-bg-water: var(--si-water-950, #02080f);
+
+  --si-fg-primary: var(--si-harbor-50);
+  --si-fg-secondary: var(--si-harbor-300);
+  --si-fg-tertiary: var(--si-harbor-500);
+  --si-fg-inverted: var(--si-harbor-900);
+  --si-fg-link: var(--si-water-300);
+  --si-fg-link-hover: var(--si-water-200);
+
+  --si-border-subtle: var(--si-harbor-700);
+  --si-border-default: var(--si-harbor-600);
+  --si-border-strong: var(--si-harbor-500);
+
+  --si-accent-primary: var(--si-water-400);
+  --si-accent-primary-hover: var(--si-water-300);
+  --si-accent-secondary: var(--si-wood-400);
+  --si-accent-amber: var(--si-amber-400);
+  --si-accent-foam: var(--si-foam-400);
+
+  --si-shadow-color: 220 13% 5%;
+}
