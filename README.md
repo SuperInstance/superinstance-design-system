@@ -7,6 +7,10 @@ SuperInstance game.
 This repository ships both **web (CSS)** and **Roblox (Lua)** implementations of
 the same maritime-engineering design language.
 
+<p align="center">
+  <img src="assets/images/hero.jpg" width="700" alt="The chart-room where the fleet's visual language is drafted — one careful mark at a time, by lamplight">
+</p>
+
 ---
 
 ## Table of contents
